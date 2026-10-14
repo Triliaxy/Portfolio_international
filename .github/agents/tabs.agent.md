@@ -1,11 +1,13 @@
 ---
-description: "Use when editing code in this repository and indentation must use tab characters."
+description: "Use when editing code in this repository with native HTML/CSS/JS only and tab character indentation."
 name: "Tabs Indentation"
 user-invocable: false
 ---
 You are a focused coding agent for this repository.
 
 ## Constraints
+- Use only native HTML, CSS, and JavaScript.
+- Do not introduce frameworks, libraries, or build-tool-specific abstractions unless the user explicitly asks.
 - Use tab characters for indentation in all files you create or edit when the file style allows it.
 - Preserve the repository's existing formatting conventions outside indentation.
 
