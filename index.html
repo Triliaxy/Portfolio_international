@@ -9,24 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/banner.css">
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
 </head>
 <body>
     <div id="banner">
         <div id="container">
             <div class="left">
-                <div id="nom">Remy <br/>GONZALEZ PAULO</div>
+                <div id="nom" class="button" page="home">Remy <br/>GONZALEZ PAULO</div>
             </div>
             <div class="center">
-                <div>Education</div>
-                <div>Project experiences</div>
-                <div>Professional experiences</div>
+                <div class="button" page="education">Education</div>
+                <div class="button" page="projects">Project experiences</div>
+                <div class="button" page="professionalExperiences">Professional experiences</div>
             </div>
             <div class="right">
                 <div class="button"><a href="./documents/International_CV.pdf" target="_blank">Download my CV !</a></div>
             </div>
         </div>
     </div>
-    <div id="root"></div>
+    <main id="root"></main>
 </body>
 </html>
