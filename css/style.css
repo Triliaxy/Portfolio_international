@@ -1,7 +1,26 @@
 *{
     margin: 0;
-    background-color: orange; //à changer
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
+body{
+    background-color: #121525;;
+}
 
+.button{
+    background-color: #253d8fde;
+    color: white;
+    border: 2px solid transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+        background-color: #2b469e;
+        box-shadow: inset 0 0 0 1px #3f62d4;
+        transition: all 0.3s ease-in-out;
+    }
+}
 
