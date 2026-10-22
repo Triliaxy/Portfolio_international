@@ -1,0 +1,25 @@
+.hobbies-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: clamp(2.5rem, 6vw, 5.5rem) 7vw;
+}
+
+.hobbies-page h1 {
+    margin: 1rem 0;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.2;
+}
+
+.hobbies-page p {
+    color: #bdc3d5;
+    line-height: 1.8;
+}
+
+.hobbies-page .button {
+    margin-top: 2rem;
+}
+
+.hobbies-page button:focus-visible {
+    outline: 2px solid #aabaff;
+    outline-offset: 5px;
+}

@@ -1,0 +1,169 @@
+/* nb : les clamp (a,b,c) signifient que la valeur sera comprise entre a et c, et que b est la valeur idéale (mais qui peut être dépassée si l’écran est trop petit ou trop grand). */
+
+/* Cadre de la page et boutons communs à l'accueil. */
+.home-page {
+	box-sizing: border-box;
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: clamp(2.5rem, 6vw, 5.5rem) 7vw;
+
+	.home-action {
+		display: inline-block;
+		margin-top: 1rem;
+		padding: 0.85rem 1.2rem;
+	}
+
+	button:focus-visible {
+		outline: 2px solid #aabaff;
+		outline-offset: 5px;
+	}
+}
+
+/* Présentation : texte à gauche, portrait à droite. */
+.home-intro {
+	display: grid;
+	grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    /* 1.3fragment permet plus de place au texte que à l’image */
+	align-items: center;
+	gap: clamp(2rem, 6vw, 5rem);
+}
+
+/* texte */
+/* titre */
+.home-presentation {
+	h1 {
+		margin-bottom: 1.2rem;
+		font-size: clamp(2.7rem, 5vw, 4.5rem);
+		line-height: 1.1;
+		letter-spacing: -0.04em;
+
+		span {
+			color: #aabaff;
+		}
+	}
+}
+
+/* phrase en dessous du h1 */
+.home-lead {
+	margin-bottom: 1.4rem;
+	color: #e6e7ee;
+	font-size: 1.25rem;
+	line-height: 1.6;
+}
+
+/* paragraphes */
+.home-description {
+	max-width: 58ch;
+	margin-bottom: 1rem;
+	color: #bdc3d5;
+	line-height: 1.8;
+}
+
+/* Mise en avant de la recherche de stage. */
+.home-availability {
+	margin-top: 1.5rem;
+	padding-left: 1rem;
+	border-left: 2px solid #aabaff;
+	color: #bdc3d5;
+	line-height: 1.7;
+
+	strong {
+		display: block;
+		margin-bottom: 0.25rem;
+		color: #e6e7ee;
+	}
+}
+
+.home-portrait {
+	width: 100%;
+	max-width: 350px;
+	justify-self: end;
+
+	img {
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		height: auto;
+		border: 1px solid #3a4564;
+		border-radius: 1rem;
+	}
+}
+/* fin container home-intro */
+
+/* Transition vers la page Hobbies. */
+.home-hobbies {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+	margin-top: clamp(3rem, 7vw, 6rem);
+	padding-top: 2.5rem;
+	border-top: 1px solid #303951;
+
+	h2 {
+		margin-bottom: 1rem;
+		font-size: clamp(1.6rem, 3vw, 2rem);
+		line-height: 1.3;
+	}
+
+	.home-description {
+		margin-bottom: 0;
+	}
+}
+
+/* lien discover my hobbies */
+.home-hobbies-link {
+	position: relative;
+	flex-shrink: 0;
+	padding: 0.7rem 0;
+	border: 0;
+	background: none;
+	color: #aabaff;
+	font: inherit;
+	text-align: left;
+	cursor: pointer;
+
+	/* La ligne se déploie depuis son centre, la transition anime aussi le retour. */
+	/* rappel : le ::after est un pseudo-élément, il existe pas dans le dom, il est que visuel */
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0.45rem;
+		height: 1px;
+		background-color: currentColor;
+		transform: scaleX(0);
+		transition: transform 0.25s ease-in-out;
+	}
+
+	&:hover::after,
+	/* navigation avec tab */
+	&:focus-visible::after {
+		transform: scaleX(1);
+	}
+	/* nb : par défaut une transformation part du centre */
+}
+
+/* Mobile : présentation et transition empilées, portrait centré. */
+@media (max-width: 700px) {
+	.home-page {
+		padding: 2.5rem 6vw;
+	}
+
+	.home-intro {
+		grid-template-columns: 1fr;
+		gap: 2.5rem;
+	}
+
+	.home-portrait {
+		max-width: 300px;
+		justify-self: center;
+	}
+
+	.home-hobbies {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+}
