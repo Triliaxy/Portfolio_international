@@ -1,25 +1,95 @@
+/* Cadre commun aux trois rubriques. */
 .hobbies-page {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: clamp(2.5rem, 6vw, 5.5rem) 7vw;
+	box-sizing: border-box;
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: clamp(2.5rem, 6vw, 5.5rem) 7vw;
+
+	h1 {
+		margin-bottom: 2.5rem;
+		font-size: clamp(2.5rem, 5vw, 4rem);
+		line-height: 1.2;
+	}
+
+	h2 { //sections title
+		margin-bottom: 1.5rem;
+		font-size: clamp(1.7rem, 3vw, 2.2rem);
+		color: #aabaff;
+	}
+
+	h3 { //subsections title
+		margin-bottom: 1rem;
+		font-size: 1.25rem;
+	}
+
+	p {
+		color: #bdc3d5;
+		line-height: 1.8;
+	}
+
+	p + p {
+		margin-top: 1rem;
+	}
+
+	> section + section {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid #303951;
+	}
+
+	.button {
+		margin-top: 2rem;
+	}
+
+	button:focus-visible {
+		outline: 2px solid #aabaff;
+		outline-offset: 5px;
+	}
 }
 
-.hobbies-page h1 {
-    margin: 1rem 0;
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    line-height: 1.2;
+/* Celeste : présentation à gauche, gameplay à droite. */
+.hobbies-celeste {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+	align-items: start;
+	gap: 2rem;
 }
 
-.hobbies-page p {
-    color: #bdc3d5;
-    line-height: 1.8;
+.hobbies-other-games {
+	margin-top: 2rem;
 }
 
-.hobbies-page .button {
-    margin-top: 2rem;
+/* Le cadre reste stable pendant le passage entre les deux lecteurs. */
+.hobbies-gameplay {
+	.hobbies-video-stage {
+		position: relative; //repère de positionnement
+		aspect-ratio: 16 / 9;
+		background-color: #0D1222;
+		border-radius: 0.75rem;
+		overflow: hidden;
+
+		video {
+			position: absolute;//ne déplace pas le lecteur
+			inset: 0; //position 0 0 0 0 
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	figcaption {
+		margin-top: 0.75rem;
+		color: #bdc3d5;
+		font-size: 0.9rem;
+	}
 }
 
-.hobbies-page button:focus-visible {
-    outline: 2px solid #aabaff;
-    outline-offset: 5px;
+/* Mobile : le gameplay passe sous la présentation de Celeste. */
+@media (max-width: 800px) {
+	.hobbies-page {
+		padding: 2.5rem 6vw;
+	}
+
+	.hobbies-celeste {
+		grid-template-columns: 1fr;
+	}
 }

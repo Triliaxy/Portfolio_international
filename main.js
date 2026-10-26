@@ -3,6 +3,7 @@ import { education } from "./modules/pages/education.js";
 import { projects } from "./modules/pages/projects.js";
 import { professionalExperiences } from "./modules/pages/professionalExperiences.js";
 import { hobbies } from "./modules/pages/hobbies.js";
+import { cleanupCelesteGallery } from "./modules/celesteGallery.js";
 
 const pages = {
   home,
@@ -14,28 +15,32 @@ const pages = {
 
 const root = document.getElementById("root")
 
-root.innerHTML = home.html
-document.title = home.title
+// Arrête la galerie avant de remplacer le contenu de la page.
+function showPage(page) {
+	cleanupCelesteGallery()
+	root.innerHTML = page.html
+	document.title = page.title
+	// Les boutons du contenu sont recréés à chaque changement de page.
+	addButtonEvents(root.querySelectorAll("button[page]"))
+	page.init?.(root)
+}
 
 const homeButton = document.querySelector("button[page='home']")
 const educationButton = document.querySelector("button[page='education']")
 const projectsButton = document.querySelector("button[page='projects']")
 const professionalExperiencesButton = document.querySelector("button[page='professionalExperiences']")
+const hobbiesButton = document.querySelector("button[page='hobbies']")
 
-const buttons = [homeButton, educationButton, projectsButton, professionalExperiencesButton]//liste de boutons pour faire un eventlistener global
+const buttons = [homeButton, educationButton, projectsButton, professionalExperiencesButton, hobbiesButton]//liste de boutons de navigation
 
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    console.log(button.getAttribute("page"))
-    root.innerHTML = pages[button.getAttribute("page")].html
-    document.title = pages[button.getAttribute("page")].title
-  })
-})
+function addButtonEvents(buttons) {
+	buttons.forEach(button => {
+		button.addEventListener("click", () => {
+			console.log(button.getAttribute("page"))
+			showPage(pages[button.getAttribute("page")])
+		})
+	})
+}
 
-root.addEventListener("click", (event) => {
-  const button = event.target.closest("button[page]")
-  if (!button || !pages[button.getAttribute("page")]) return
-
-  root.innerHTML = pages[button.getAttribute("page")].html
-  document.title = pages[button.getAttribute("page")].title
-})
+showPage(home)
+addButtonEvents(buttons)
