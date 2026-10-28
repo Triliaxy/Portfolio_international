@@ -29,7 +29,7 @@ const projects = {
 
 					<article class="project">
 						<h3>Personal portfolio</h3>
-						<p class="project-type">Personal project</p>
+						<p class="project-type">Personal project - October - November 2026</p>
 						<p>
 							This website brings together my education, projects,
 							volunteer experience and hobbies. I built it with
