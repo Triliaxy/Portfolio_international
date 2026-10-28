@@ -22,7 +22,7 @@ function showPage(page) {
 	document.title = page.title
 	// Les boutons du contenu sont recréés à chaque changement de page.
 	addButtonEvents(root.querySelectorAll("button[page]"))
-	page.init?.(root)
+	page.init?.(root)//appelle la fonction init de la page si elle existe
 }
 
 const homeButton = document.querySelector("button[page='home']")

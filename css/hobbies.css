@@ -11,13 +11,13 @@
 		line-height: 1.2;
 	}
 
-	h2 { //sections title
+	h2 { /* sections title */
 		margin-bottom: 1.5rem;
 		font-size: clamp(1.7rem, 3vw, 2.2rem);
 		color: #aabaff;
 	}
 
-	h3 { //subsections title
+	h3 { /* subsections title */
 		margin-bottom: 1rem;
 		font-size: 1.25rem;
 	}
@@ -62,15 +62,15 @@
 /* Le cadre reste stable pendant le passage entre les deux lecteurs. */
 .hobbies-gameplay {
 	.hobbies-video-stage {
-		position: relative; //repère de positionnement
+		position: relative; /* repère de positionnement */
 		aspect-ratio: 16 / 9;
 		background-color: #0D1222;
 		border-radius: 0.75rem;
 		overflow: hidden;
 
 		video {
-			position: absolute;//ne déplace pas le lecteur
-			inset: 0; //position 0 0 0 0 
+			position: absolute; /* place les vidéos dans le même cadre */
+			inset: 0; /* position 0 0 0 0 */
 			width: 100%;
 			height: 100%;
 		}
