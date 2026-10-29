@@ -43,6 +43,25 @@ const home = {
                 </figure>
             </section>
 
+            <div class="home-skills">
+                <section>
+                    <h2>Soft skills</h2>
+                    <ul>
+                        <li><strong>Teamwork</strong> - Collaborating on the FORMA interactive map.</li>
+                        <li><strong>Organisation and communication</strong> - Writing meeting minutes and helping coordinate activities at ODIN.</li>
+                        <li><strong>Initiative</strong> - Learning React and Node.js independently alongside my studies.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Languages</h2>
+                    <ul>
+                        <li><strong>French</strong> - Native</li>
+                        <li><strong>English</strong> - B2 (Upper intermediate)</li>
+                        <li><strong>Spanish</strong> - A2 (Elementary)</li>
+                    </ul>
+                </section>
+            </div>
+
             <section class="home-hobbies">
                 <div>
                     <h2>A little more about me.</h2>

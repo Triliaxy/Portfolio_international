@@ -15,6 +15,7 @@ button.button {
   border-bottom: 1px solid #3f62d4;
   position: sticky;
   top: 0;
+  z-index: 1; /* Garde la bannière au-dessus du contenu pendant le défilement */
 
   #container {
     box-sizing: border-box;/*indique que la largeur + hauteur définies incluent le contenu, padding et bordures*/

@@ -43,7 +43,7 @@ const professionalExperiences = {
 				<p class="experience-period">August 2023 - Present</p>
 				<div>
 					<h2>Volunteer online community support</h2>
-					<p class="experience-organization">External contribution to an association's online community</p>
+					<p class="experience-organization">External contribution to the <a href="https://furry-fr.fr/" target="_blank" rel="noopener noreferrer">FurryFr</a> association's Discord server</p>
 					<ul>
 						<li>Contribute to handling community support tickets.</li>
 						<li>Help organise online events.</li>
