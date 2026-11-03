@@ -4,9 +4,9 @@ const clips = [
 	{ file: "Celeste - farewelllike.mp4", title: "Another Farewell Map C-side - Room 1" },
 	{ file: "Celeste pinball purgatory - room 2 clear.mp4", title: "Pinball Purgatory - Room 2" },
 	{ file: "Celeste Pinball Purgatory - room 3 clear.mp4", title: "Pinball Purgatory - Room 3" },
-	{ file: "Celeste Pinball Purgatory - room 4 clear.mp4", title: "Pinball Purgatory - Room 4" },
-	{ file: "Celeste Pinball Purgatory - room 5 clear.mp4", title: "Pinball Purgatory - Room 5" },
-	{ file: "Celeste Pinball Purgatory - room 6 clear.mp4", title: "Pinball Purgatory - Room 6" },
+	{ file: "Celeste pinball purgatory - room 4 clear.mp4", title: "Pinball Purgatory - Room 4" },
+	{ file: "Celeste pinball purgatory - room 5 clear.mp4", title: "Pinball Purgatory - Room 5" },
+	{ file: "Celeste pinball purgatory - room 6 clear.mp4", title: "Pinball Purgatory - Room 6" },
 	{ file: "Celeste SWAPSLUT - Expert room 4-03.mp4", title: "SWAPSLUT - Expert Room 4-03" }
 ]
 
