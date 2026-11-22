@@ -14,7 +14,7 @@ const professionalExperiences = {
 				<div>
 					<h2>Volunteer programming mentor</h2>
 					<p class="experience-organization">
-						Coder Dojo<br>
+						CodeClub<br>
 						3 esplanade Augustin Aussedat, 74960 Annecy (Cran-Gevrier), France
 					</p>
 					<ul>

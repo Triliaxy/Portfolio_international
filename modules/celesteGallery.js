@@ -7,6 +7,9 @@ const clips = [
 	{ file: "Celeste pinball purgatory - room 4 clear.mp4", title: "Pinball Purgatory - Room 4" },
 	{ file: "Celeste pinball purgatory - room 5 clear.mp4", title: "Pinball Purgatory - Room 5" },
 	{ file: "Celeste pinball purgatory - room 6 clear.mp4", title: "Pinball Purgatory - Room 6" },
+	{ file: "Celeste pinball purgatory - room 7 clear.mp4", title: "Pinball Purgatory - Room 7" },
+	{ file: "Celeste pinball purgatory - room 8 clear.mp4", title: "Pinball Purgatory - Room 8" },
+	{ file: "Celeste pinball purgatory - final room clear.mp4", title: "Pinball Purgatory - Final Room" },
 	{ file: "Celeste SWAPSLUT - Expert room 4-03.mp4", title: "SWAPSLUT - Expert Room 4-03" }
 ]
 

@@ -12,22 +12,6 @@ const projects = {
 				<h2>Web development</h2>
 				<div class="projects-list">
 					<article class="project">
-						<h3>FORMA interactive map</h3>
-						<p class="project-type">School team project - November 2024 - March 2025</p>
-						<p>
-							I contributed to an interactive map for FORMA, a careers
-							and education fair. Working as a team, we built a web
-							interface and used CSV and JSON data with an SVG map.
-						</p>
-						<p>
-							This project gave me experience in web development,
-							data handling and organising work within a team.
-						</p>
-						<p class="project-technologies">HTML, CSS, JavaScript, SVG, CSV and JSON</p>
-						<a href="https://github.com/Triliaxy/FORMA_interactive_map_2025" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
-					</article>
-
-					<article class="project">
 						<h3>Personal portfolio</h3>
 						<p class="project-type">Personal project - October - November 2026</p>
 						<p>
@@ -43,6 +27,38 @@ const projects = {
 						<p class="project-technologies">HTML, CSS and JavaScript</p>
 						<a href="https://github.com/Triliaxy/Portfolio_international"
 						   target="_blank" rel="noopener noreferrer">View source on GitHub</a>
+					</article>
+
+					<article class="project">
+						<h3>CodeClub programming app</h3>
+						<p class="project-type">Volunteer project</p>
+						<p>
+							I built this app for CodeClub, an association that introduces
+							young learners to programming through workshops.
+						</p>
+						<p class="project-technologies">TypeScript, React, CSS and Vite</p>
+						<div class="project-links">
+							<a href="https://github.com/Triliaxy/code-club-intro-dev"
+							   target="_blank" rel="noopener noreferrer">View repository on GitHub</a>
+							<a href="https://github.com/Triliaxy/code-club-intro-dev/tree/Version_clean"
+							   target="_blank" rel="noopener noreferrer">View Version_clean branch</a>
+						</div>
+					</article>
+
+					<article class="project">
+						<h3>FORMA interactive map</h3>
+						<p class="project-type">School team project - November 2024 - March 2025</p>
+						<p>
+							I contributed to an interactive map for FORMA, a careers
+							and education fair. Working as a team, we built a web
+							interface and used CSV and JSON data with an SVG map.
+						</p>
+						<p>
+							This project gave me experience in web development,
+							data handling and organising work within a team.
+						</p>
+						<p class="project-technologies">HTML, CSS, JavaScript, SVG, CSV and JSON</p>
+						<a href="https://github.com/Triliaxy/FORMA_interactive_map_2025" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
 					</article>
 				</div>
 			</section>
