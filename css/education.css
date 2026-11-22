@@ -1,4 +1,4 @@
-/* Cadre de la page et séparation entre les deux formations */
+/* Cadre de la page et séparation des sections */
 .education-page {
 	box-sizing: border-box;
 	max-width: 1240px;
@@ -11,6 +11,17 @@
 		line-height: 1.2;
 	}
 
+	h2 {
+		margin-bottom: 0.75rem;
+		font-size: clamp(1.5rem, 3vw, 2rem);
+		line-height: 1.3;
+	}
+
+	p {
+		color: #bdc3d5;
+		line-height: 1.8;
+	}
+
 	> section + section { /* séparateur entre les sections */
 		margin-top: 3rem;
 		padding-top: 3rem;
@@ -21,7 +32,8 @@
 		margin-top: 2.5rem;
 	}
 
-	button:focus-visible {
+	button:focus-visible,
+	.education-references a:focus-visible {
 		outline: 2px solid #aabaff;
 		outline-offset: 5px;
 	}
@@ -43,17 +55,6 @@
 		border-radius: 0.75rem;
 	}
 
-	h2 {
-		margin-bottom: 0.75rem;
-		font-size: clamp(1.5rem, 3vw, 2rem);
-		line-height: 1.3;
-	}
-
-	p {
-		color: #bdc3d5;
-		line-height: 1.8;
-	}
-
 	p + p { /* séparateur entre les p */
 		margin-top: 1rem;
 	}
@@ -69,13 +70,33 @@
 	}
 }
 
-/* Mobile : la photo précède le texte, sans recadrage des images */
+.education-reference-list {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.5rem;
+	margin-top: 1.25rem;
+
+	h3 {
+		margin-bottom: 0.25rem;
+	}
+
+	a {
+		display: inline-block;
+		margin-top: 0.25rem;
+		color: #aabaff;
+		overflow-wrap: anywhere;
+		text-underline-offset: 0.3em;
+	}
+}
+
+/* Mobile : les formations et les références passent sur une colonne */
 @media (max-width: 800px) {
 	.education-page {
 		padding: 2.5rem 6vw;
 	}
 
-	.education-school {
+	.education-school,
+	.education-reference-list {
 		grid-template-columns: 1fr;
 	}
 }

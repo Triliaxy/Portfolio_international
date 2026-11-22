@@ -31,17 +31,22 @@ const projects = {
 
 					<article class="project">
 						<h3>CodeClub programming app</h3>
-						<p class="project-type">Volunteer project</p>
+						<p class="project-type">Volunteer project - November 2026</p>
 						<p>
 							I built this app for CodeClub, an association that introduces
 							young learners to programming through workshops.
 						</p>
+						<p>
+							The default branch (<code>master</code>) contains the workshop
+							materials and a starter script for learners to complete. The
+							<code>Version_clean</code> branch contains the completed script.
+						</p>
 						<p class="project-technologies">TypeScript, React, CSS and Vite</p>
 						<div class="project-links">
 							<a href="https://github.com/Triliaxy/code-club-intro-dev"
-							   target="_blank" rel="noopener noreferrer">View repository on GitHub</a>
+							   target="_blank" rel="noopener noreferrer">View workshop materials on GitHub</a>
 							<a href="https://github.com/Triliaxy/code-club-intro-dev/tree/Version_clean"
-							   target="_blank" rel="noopener noreferrer">View Version_clean branch</a>
+							   target="_blank" rel="noopener noreferrer">View completed version on GitHub</a>
 						</div>
 					</article>
 
@@ -68,9 +73,9 @@ const projects = {
 				<div class="projects-list">
 					<article class="project">
 						<h3>Pac-Fish</h3>
-						<p class="project-type">University project (SAÉ) - 2025 - Team of two</p>
+						<p class="project-type">University project - 2025 - Team of two</p>
 						<p>
-							As part of a university SAÉ, we worked as a pair to
+							For this university project, we worked as a pair to
 							develop a game inspired by Pac-Man using WPF.
 						</p>
 						<p>
@@ -91,7 +96,7 @@ const projects = {
 				<h2>Systems &amp; infrastructure</h2>
 				<div class="projects-list">
 					<article class="project">
-						<h3>SAÉ 2.03 - Raspberry Pi web server</h3>
+						<h3>Raspberry Pi web server</h3>
 						<p class="project-type">University project - 2025-2026 - Team of two</p>
 						<p>
 							We installed and configured a web server on a Raspberry Pi 2,

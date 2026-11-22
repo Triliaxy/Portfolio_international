@@ -45,6 +45,23 @@ const education = {
 				</div>
 			</section>
 
+			<section class="education-references" aria-labelledby="education-references-title">
+				<h2 id="education-references-title">References</h2>
+				<p>Annecy University Institute of Technology (IUT), University of Savoy, France</p>
+				<div class="education-reference-list">
+					<div>
+						<h3>Stéphanie Vibrac</h3>
+						<p>English Lecturer<br>International Coordinator</p>
+						<a href="mailto:stephanie.vibrac@univ-smb.fr">stephanie.vibrac@univ-smb.fr</a>
+					</div>
+					<div>
+						<h3>Luc Damas</h3>
+						<p>Programming Associate Professor</p>
+						<a href="mailto:luc.damas@univ-smb.fr">luc.damas@univ-smb.fr</a>
+					</div>
+				</div>
+			</section>
+
 			<button type="button" class="button" page="projects">Explore my projects</button>
 		</div>
 	`

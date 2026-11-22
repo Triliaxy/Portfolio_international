@@ -31,3 +31,5 @@ body{
     flex: 1;
 }
 
+/* Ne me frappez pas pour avoir fait du nesting css alors que c’est pas encore pris en charge par tous les navigateurs svp */
+/* Je suis en train de me mettre au SCSS :) */
